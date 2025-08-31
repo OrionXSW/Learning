@@ -18,4 +18,8 @@ general purpose input output (通用输出输出端口)
 
 上下拉选择: 浮空 | 上拉 | 下拉
 
-输出速度: 2MHz | 5 MHz
+输出速度: 2MHz | 25 MHz | 50MHz | ....
+
+复用寄存器: GPIOx_AFRH/ GPIOx_AFRL 
+
+在程序上是用数组来表示这两个寄存器,比如GPIOx_AFR[0]表示GPIOx_AFRL 低寄存器

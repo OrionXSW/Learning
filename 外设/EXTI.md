@@ -4,9 +4,11 @@ EXTI -----External(Extended) interrupt/event Controller
 
 Íâ²¿(À©Õ¹)ÖÐ¶ÏÊÂ¼þ¿ØÖÆÆ÷
 
-°üº¬20¸ö²úÉú**ÊÂ¼þ**/**ÖÐ¶Ï**ÇëÇóµÄ±ßÑØ¼ì²âÆ÷ 
+°üº¬20¸ö²úÉú**ÊÂ¼þ**/**ÖÐ¶Ï**ÇëÇóµÄ±ßÑØ¼ì²âÆ÷
 
 ×Ü¹²20ÌõEXTIÏß(F1ÏµÁÐ)
+
+**×¢:ÎÞÐèÊ±ÖÓÅäÖÃ**
 
 # ÖÐ¶ÏÓëÊÂ¼þ
 
@@ -22,9 +24,9 @@ EXTI -----External(Extended) interrupt/event Controller
 
 Ã¿ÌõEXTIÏß¶¼¿ÉÒÔµ¥¶ÀÅäÖÃ:
 
-1.Ñ¡ÔñÀàÐÍ(ÖÐ¶Ï»òÊÂ¼þ) 
+1.Ñ¡ÔñÀàÐÍ(ÖÐ¶Ï»òÊÂ¼þ)
 
-2. ´¥·¢·½Ê½(ÉÏÉýÑØ,ÏÂ½µÑØ»òË«±ßÑØ´¥·¢)
+2.´¥·¢·½Ê½(ÉÏÉýÑØ,ÏÂ½µÑØ»òË«±ßÑØ´¥·¢)
 
 3.Ö§³ÖÈí¼þ´¥·¢
 
@@ -47,7 +49,6 @@ EXTI_RTSR  --------ÉÏÉýÑØ´¥·¢Ñ¡Ôñ¼Ä´æÆ÷
 EXTI_PR	--------ÇëÇó¹ÒÆð¼Ä´æÆ÷
 
 EXTI_IMR    --------ÖÐ¶ÏÆÁ±Î¼Ä´æÆ÷
-
 
 # EXTIÓëIOÓ³Éä¹ØÏµ
 
@@ -75,14 +76,15 @@ SYSCFG --------System configuration controller	ÏµÍ³ÅäÖÃ¿ØÖÆÆ÷  ÓÃÓÚÍâ²¿ÖÐ¶ÏÓ³ÉäÅ
 
 ×¢: ÅäÖÃSYSCFG¼Ä´æÆ÷Ç°ÒªÊ¹ÄÜSYSCFGÊ±ÖÓ
 
+***Í³Ò»±íÊö:SYSCFG/AFIOµÄ×÷ÓÃÊÇ:°ÑÄ³¸öÒý½Å¶Ë¿ÚÅäÖÃÎªEXITxµÄÖÐ¶ÏÔ´»ò½« Ä³¸ö¶Ë¿Ú Ó³Éäµ½ EXTIX ÖÐ¶ÏÏß***
+
 # EXTIÓëIO¶ÔÓ¦¹ØÏµ
 
 Ã¿¸öIO¿ÚÖ»ÄÜÓ³Éäµ½Ò»¸öEXTIÏß
 
-Èç Px0 -> EXTI0   
+Èç Px0 -> EXTI0
 
 ²»ÄÜÁ½¸öIO¿ÚÓ³ÉäÒ»¸öEXTIÏß,PA0 ºÍPB0Ö»ÄÜÑ¡Ò»¸ö
-
 
 GPIOÍâ²¿ÖÐ¶ÏÅäÖÃ²½Öè(EXTI)
 
