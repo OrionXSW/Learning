@@ -1,6 +1,6 @@
 ***每天好一点***
 
-F407:Register/ STD F103:HAL GD32:STD
+F407:Register/ HAL F103:搁置 GD32:STD ESP32:ESP-IDF Hardware:Start
 
 ---
 

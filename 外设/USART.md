@@ -46,7 +46,21 @@ USART_BRR 	baud rate register
 
 要是不用四舍五入则USARTDIV(移位后) = fck / baud;
 
-四舍五入最终版:USARTDIV = (fck * 2 + baud) / baud * 2	(16倍采样版本)
+四舍五入最终版:USARTDIV() = (fck * 2 + baud) / (baud * 2)	(16倍采样版本)
+
+四舍五入最终版解释: 
+
+参考手册上的USARTDIV需要乘于16才能进入BRR(波特率寄存器)的整数部分(相当于移动4位)
+
+在OVER8 = 0(16倍采样的情况下) USARTDIV = Fck / 16 * Baud  移位后 DIV = Fck / Baud	(无四舍五入版本,直接整数截断)
+
+注: 无论是整数还是小数都需要*16,一个是为了移动4位进入BRR寄存器(整数部分),另一个是为了能存入寄存器才乘16(小数部分)
+
+插入四舍五入公式 (a + b/2) / b	
+
+所以四舍五入版: DIV = (Fck + Baud/2) / Baud	为了减少整数截断,上下乘于2
+
+DIV = (Fck * 2 + Baud) / (Baud * 2) 所以就变为最终版本了
 
 ```
 // 波特率  USART->BRR  要先得到DIV Fplck = 84Mhz (APB2) 
